@@ -52,6 +52,7 @@ main section article article i {
     padding: 5px;
     width: 30px;
     height: 30px;
+    color: #39b54a;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
@@ -70,9 +71,10 @@ article#separacion {
     background-color: white;
     padding-inline: 10%;
     padding-block: 10%;
-    line-height: 0;
     display: flex;
-    margin: 0;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
 
 }
 
