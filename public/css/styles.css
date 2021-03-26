@@ -65,7 +65,7 @@ main section article article i {
 }
 
 article#separacion {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
     background-color: white;
     }
 
@@ -123,6 +123,16 @@ p.descuentos{
 p{
     font-size: 12px;
     font-weight: normal;
+}
+
+.caja div.precioDescuento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.caja div p {
+    margin-right: 1rem;
 }
 
 nav ul{
@@ -252,13 +262,16 @@ form.buscador button:hover {
 
 /*---Register---*/
 
+form {
+    width: 50vw;
+}
+
 section.section-register {
     display: flex;  
     border: red 1px solid;
 }
 
 .contenedor1 {
-    border: seagreen 10px solid;
     display: flex;
     width: 90vw;
     flex-direction: column;
@@ -269,14 +282,26 @@ section.section-register {
 
 input#nombre {
     width: 100%;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid white;
+    padding: 1%;
+    font-size: 1rem;
 }
 
 input#usuario {
     width: 100%;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid white;
+    padding: 1%;
+    font-size: 1rem;
 }
 
 input#e-mail {
     width: 100%;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid white;
+    padding: 1%;
+    font-size: 1rem;
 }
 
 .contenedor1 label {
@@ -295,10 +320,18 @@ input#e-mail {
 
 input#calendario {
     width: 100%;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid white;
+    padding: 1%;
+    font-size: 1rem;
 }
 
 input#domicilio {
     width: 100%;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid white;
+    padding: 1%;
+    font-size: 1rem;
 }
 
 .contenedor3 {
@@ -345,6 +378,18 @@ input#domicilio {
     border: black 2px solid;
 }
 
+input#password {
+    width: 100%;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid white;
+    padding: 1%;
+    font-size: 1rem;
+}
+
+.elegirContraseña {
+    margin-bottom: 1.5rem;
+}
+
 .contenedor7 {
     width: 90vw;
     display: flex;
@@ -359,6 +404,10 @@ input#domicilio {
 .contenedor7 button {
     width: 100%;
     color: white;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid #0044AA;
+    padding: 1%;
+    font-size: 1rem;
     background-color: #0044AA;
 }
 
@@ -376,6 +425,10 @@ input#domicilio {
 .contenedor8 button {
     width: 100%;
     color: white;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid #a11717;
+    padding: 1%;
+    font-size: 1rem;
     background-color: #a11717;
 }
 
