@@ -262,10 +262,6 @@ form.buscador button:hover {
 
 /*---Register---*/
 
-form {
-    width: 50vw;
-}
-
 section.section-register {
     display: flex;  
     border: red 1px solid;
@@ -284,7 +280,7 @@ input#nombre {
     width: 100%;
     border-radius: 0px 7px 7px 0px;
     border: 1px solid white;
-    padding: 1%;
+    padding: 5px;
     font-size: 1rem;
 }
 
@@ -292,7 +288,7 @@ input#usuario {
     width: 100%;
     border-radius: 0px 7px 7px 0px;
     border: 1px solid white;
-    padding: 1%;
+    padding: 5px;
     font-size: 1rem;
 }
 
@@ -300,7 +296,7 @@ input#e-mail {
     width: 100%;
     border-radius: 0px 7px 7px 0px;
     border: 1px solid white;
-    padding: 1%;
+    padding: 5px;
     font-size: 1rem;
 }
 
@@ -315,22 +311,22 @@ input#e-mail {
     justify-content: center;
     align-items: center;
     margin-bottom: 1.5rem;
-    border: slateblue 2px solid;
 }
 
 input#calendario {
     width: 100%;
     border-radius: 0px 7px 7px 0px;
     border: 1px solid white;
-    padding: 1%;
+    padding: 5px;
     font-size: 1rem;
+    background-color: white;
 }
 
 input#domicilio {
     width: 100%;
     border-radius: 0px 7px 7px 0px;
     border: 1px solid white;
-    padding: 1%;
+    padding: 5px;
     font-size: 1rem;
 }
 
@@ -342,7 +338,6 @@ input#domicilio {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
-    border: yellow 2px solid;
 }
 
 .contenedor4 {
@@ -352,7 +347,6 @@ input#domicilio {
     flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 1.5rem;
-    border: blue 2px solid;
 }
 
 .contenedor5 {
@@ -364,7 +358,6 @@ input#domicilio {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-    border: orange 2px solid;
 }
 
 .contenedor6 {
@@ -375,14 +368,13 @@ input#domicilio {
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-bottom: 1.5rem;
-    border: black 2px solid;
 }
 
 input#password {
     width: 100%;
     border-radius: 0px 7px 7px 0px;
     border: 1px solid white;
-    padding: 1%;
+    padding: 5px;
     font-size: 1rem;
 }
 
@@ -398,7 +390,6 @@ input#password {
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
-    border: goldenrod 2px solid;
 }
 
 .contenedor7 button {
@@ -406,7 +397,7 @@ input#password {
     color: white;
     border-radius: 0px 7px 7px 0px;
     border: 1px solid #0044AA;
-    padding: 1%;
+    padding: 5px;
     font-size: 1rem;
     background-color: #0044AA;
 }
@@ -419,7 +410,6 @@ input#password {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    border: goldenrod 2px solid;
 }
 
 .contenedor8 button {
@@ -427,13 +417,25 @@ input#password {
     color: white;
     border-radius: 0px 7px 7px 0px;
     border: 1px solid #a11717;
-    padding: 1%;
+    padding: 5px;
     font-size: 1rem;
     background-color: #a11717;
 }
 
 .botones {
     margin-bottom: 1.5rem;
+}
+
+/*---Login---*/
+
+input#nombreUsuario {
+    width: 100%;
+    color: white;
+    border-radius: 0px 7px 7px 0px;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: white;
 }
 
 @media(min-width: 361px){
@@ -534,4 +536,10 @@ input#password {
     form.buscador{
         width: 70%;
     }    
+    input#nombre, input#nombreUsuario, input#usuario, input#e-mail, input#calendario, input#domicilio, input#password, .elegirContraseña, .confirmarContraseña, .contenedor7 button, .contenedor8 button, main.main-register h3 {
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
