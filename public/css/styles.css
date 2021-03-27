@@ -430,7 +430,6 @@ input#password {
 
 input#nombreUsuario {
     width: 100%;
-    color: white;
     border-radius: 0px 7px 7px 0px;
     border: 1px solid white;
     padding: 5px;
