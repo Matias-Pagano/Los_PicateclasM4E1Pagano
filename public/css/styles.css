@@ -17,6 +17,7 @@ header{
     background-color: #EAC926;
     width: 100%;
     padding: 8px;
+    padding-right: 15px;
     position: fixed;
     z-index: 100;
     top: 0;
