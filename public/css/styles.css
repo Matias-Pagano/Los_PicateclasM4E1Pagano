@@ -9,10 +9,17 @@ html{
     background-color: #ebebeb;
 }
 
+body {
+    margin-top: 40%;
+}
+
 header{
     background-color: #EAC926;
-    background-size: cover;
-    padding: 2%;
+    width: 100%;
+    padding: 8px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
 }
 
 .logoML{
@@ -90,7 +97,7 @@ footer{
     color:#666;
     box-sizing: border-box;
     padding: 4%;
-    width: 90vw;
+    width: 100vw;
     margin: auto;
 }
 
@@ -113,7 +120,11 @@ footer{
 .descripciones{
     font-size: 16px;
     color: #666;
-    display: none;
+    opacity: 0;
+}
+
+.descripciones:hover {
+    opacity: 1;
 }
 
 p.descuentos{
@@ -203,6 +214,10 @@ footer#noEspacio h3{
     margin: 0;
 }
 
+footer article#noMargen i:hover {
+    color: #0022AA;
+}
+
 h5{
     font-size: 12px;
     text-align: left;
@@ -264,7 +279,7 @@ form.buscador button:hover {
 
 section.section-register {
     display: flex;  
-    border: red 1px solid;
+    /*border: red 1px solid;*/
 }
 
 .contenedor1 {
@@ -278,26 +293,23 @@ section.section-register {
 
 input#nombre {
     width: 100%;
-    border-radius: 0px 7px 7px 0px;
-    border: 1px solid white;
+    border-radius: 7px;
+    border: 5px solid white;
     padding: 5px;
-    font-size: 1rem;
 }
 
 input#usuario {
     width: 100%;
-    border-radius: 0px 7px 7px 0px;
-    border: 1px solid white;
+    border-radius: 7px;
+    border: 5px solid white;
     padding: 5px;
-    font-size: 1rem;
 }
 
 input#e-mail {
     width: 100%;
-    border-radius: 0px 7px 7px 0px;
-    border: 1px solid white;
+    border-radius: 7px;
+    border: 5px solid white;
     padding: 5px;
-    font-size: 1rem;
 }
 
 .contenedor1 label {
@@ -315,19 +327,17 @@ input#e-mail {
 
 input#calendario {
     width: 100%;
-    border-radius: 0px 7px 7px 0px;
-    border: 1px solid white;
+    border-radius: 7px;
+    border: 5px solid white;
     padding: 5px;
-    font-size: 1rem;
     background-color: white;
 }
 
 input#domicilio {
     width: 100%;
-    border-radius: 0px 7px 7px 0px;
-    border: 1px solid white;
+    border-radius: 7px;
+    border: 5px solid white;
     padding: 5px;
-    font-size: 1rem;
 }
 
 .contenedor3 {
@@ -372,10 +382,9 @@ input#domicilio {
 
 input#password {
     width: 100%;
-    border-radius: 0px 7px 7px 0px;
-    border: 1px solid white;
+    border-radius: 7px;
+    border: 5px solid white;
     padding: 5px;
-    font-size: 1rem;
 }
 
 .elegirContraseña {
@@ -395,11 +404,15 @@ input#password {
 .contenedor7 button {
     width: 100%;
     color: white;
-    border-radius: 0px 7px 7px 0px;
+    border-radius: 7px;
     border: 1px solid #0044AA;
-    padding: 5px;
-    font-size: 1rem;
+    padding: 8px;
+    margin-top: 30px;
     background-color: #0044AA;
+}
+
+.contenedor7 button:hover {
+    background-color: #0022AA;
 }
 
 .contenedor8 {
@@ -415,10 +428,10 @@ input#password {
 .contenedor8 button {
     width: 100%;
     color: white;
-    border-radius: 0px 7px 7px 0px;
+    border-radius: 7px;
     border: 1px solid #a11717;
-    padding: 5px;
-    font-size: 1rem;
+    padding: 8px;
+    margin-top: 20px;
     background-color: #a11717;
 }
 
@@ -430,23 +443,26 @@ input#password {
 
 input#nombreUsuario {
     width: 100%;
-    border-radius: 0px 7px 7px 0px;
+    border-radius: 7px;
     border: 1px solid white;
     padding: 5px;
-    font-size: 1rem;
     background-color: white;
 }
 
 @media(min-width: 361px){
-    article#separacion{
+    article#separacion:hover{
         box-shadow : 0px 0px 10px rgb(100, 100, 100 );
     }
+
     .descripciones{
         display: block;
     }
+    body {
+        margin-top: 22%;
+    }
     .barraDeNav{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -483,11 +499,14 @@ input#nombreUsuario {
 
 
 @media(min-width: 769px){
-    article#separacion{
+    article#separacion:hover{
         box-shadow : 0px 0px 10px rgb(100, 100, 100 );
     }
     .descripciones{
         display: block;
+    }
+    body {
+        margin-top: 113px;
     }
     .barraDeNav{
         display: flex;
@@ -535,10 +554,34 @@ input#nombreUsuario {
     form.buscador{
         width: 70%;
     }    
-    input#nombre, input#nombreUsuario, input#usuario, input#e-mail, input#calendario, input#domicilio, input#password, .elegirContraseña, .confirmarContraseña, .contenedor7 button, .contenedor8 button, main.main-register h3 {
+    /*input#nombre, input#nombreUsuario, input#usuario, input#e-mail, input#calendario, input#domicilio, input#password, .elegirContraseña, .confirmarContraseña, .contenedor7 button, .contenedor8 button, main.main-register h3 {
         width: 50vw;
         display: flex;
         align-items: center;
         justify-content: center;
+    }*/
+}
+
+@media(min-width: 1200px){
+    body {
+        margin-top: 136px;
+    }
+}
+
+@media(min-width: 1400px){
+    body {
+        margin-top: 153px;
+    }
+}
+
+@media(min-width: 1550px){
+    body {
+        margin-top: 170px;
+    }
+}
+
+@media(min-width: 1850px){
+    body {
+        margin-top: 195px;
     }
 }
