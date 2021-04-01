@@ -58,7 +58,7 @@
 
     <main class="main-register">
         <section class="section-register">
-            <form action="#" method="POST">
+            <form action="/" method="GET">
                 <div class="contenedor1">
                     <label for="nombre"></label>
                     <input required type="text" placeholder="Nombre y apellido" name="nombre" id="nombre">
@@ -71,7 +71,7 @@
                 <h3>Fecha de nacimiento</h2>
                     <br>
                     <div class="contenedor2">
-                        <input required type="date" name="fecha" value="aaaa-mm-dd" id="calendario">
+                        <input required type="date" name="fecha" value="yyyy-MM-dd" id="calendario">
                         <br>
                         <label for="domicilio"></label>
                         <input required type="domicilio" placeholder="Domicilio" name="domicilio" id="domicilio">
@@ -117,15 +117,17 @@
                                 </div>
                                 <div class="confirmarContraseña">
                                     <label for="password"></label>
-                                    <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required type="password" placeholder="Confirmá tu contraseña" name="password"
+                                    <input required type="password" placeholder="Confirmá tu contraseña" name="password"
                                         id="password">
                                 </div>
                             </div>
                             <div class="botones">
+                                <form action="/" method="GET"> 
                                 <div class="contenedor7">
                                     <label for="submit" method="GET"></label>
                                     <button type="submit">Enviar</button>
                                 </div>
+                            </form>
                                 <div class="contenedor8">
                                     <label for="reset" method="GET"></label>
                                     <button type="reset">Borrar</button>
