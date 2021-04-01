@@ -80,15 +80,11 @@ article#separacion {
 .caja{
     border-top: solid 1px #ebebeb;
     background-color: white;
-    padding: 15px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     position: relative;
-}
-
-h4.descripciones {
-    margin-top: 20px;    
 }
 
 footer{
@@ -121,11 +117,15 @@ footer{
 .descripciones{
     font-size: 16px;
     color: #666;
+    
+}
+
+article#separacion .descripciones {
     opacity: 0;
     transition: all 500ms;
 }
 
-.descripciones:hover {
+article#separacion:hover .descripciones {
     opacity: 1;
 }
 
@@ -501,6 +501,9 @@ input#nombreUsuario {
     }
     form.buscador{
         width: 60%;
+    }
+    h4.descripciones {
+        margin-top: 20px;    
     }
 }  
 
