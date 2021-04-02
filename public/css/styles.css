@@ -129,6 +129,14 @@ article#separacion:hover .descripciones {
     opacity: 1;
 }
 
+article#separacion i {
+    transition: transform 1s;
+}
+
+article#separacion:hover i{
+    transform: rotate(-90deg);
+}
+
 .caja p.descuentos{
     color: #39b54a;
     flex: 1 1 70%;
@@ -222,22 +230,6 @@ h5{
     font-size: 12px;
     text-align: left;
 }
-
-
-  /*.buscador input[type=text] {
-    float: center;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 15px;
-    border: 1px solid black;
-    text-align: center;   
-}*/
-
-/*.buscador button[type=submit]{
-    font-size: 20px;
-    border: 1px solid black;
-}*/
 
 form.buscador{
     width: 50%;
@@ -449,7 +441,7 @@ input#password {
 input#nombreUsuario {
     width: 100%;
     border-radius: 7px;
-    border: 1px solid white;
+    border: 5px solid white;
     padding: 5px;
     background-color: white;
 }
@@ -562,12 +554,6 @@ input#nombreUsuario {
     form.buscador{
         width: 70%;
     }    
-    /*input#nombre, input#nombreUsuario, input#usuario, input#e-mail, input#calendario, input#domicilio, input#password, .elegirContraseña, .confirmarContraseña, .contenedor7 button, .contenedor8 button, main.main-register h3 {
-        width: 50vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }*/
 }
 
 @media(min-width: 1200px){
