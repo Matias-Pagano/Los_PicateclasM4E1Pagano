@@ -463,7 +463,7 @@ input#nombreUsuario {
         display: block;
     }
     body {
-        margin-top: 22%;
+        margin-top: 144px;
     }
     .barraDeNav{
         display: flex;
@@ -561,7 +561,25 @@ input#nombreUsuario {
     }
     form.buscador{
         width: 70%;
-    }    
+    }
+
+    /*---Login---*/
+
+    input#nombreUsuario {
+        width: 50vw;
+    }
+    input#password {
+        width: 50vw;
+    }
+    div.contenedor7 button {
+        width: 50vw;
+    }
+}
+
+@media(min-width: 425px){
+    body {
+        margin-top: 102px;
+    }
 }
 
 @media(min-width: 1200px){
