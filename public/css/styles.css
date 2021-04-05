@@ -562,18 +562,6 @@ input#nombreUsuario {
     form.buscador{
         width: 70%;
     }
-
-    /*---Login---*/
-
-    input#nombreUsuario {
-        width: 50vw;
-    }
-    input#password {
-        width: 50vw;
-    }
-    div.contenedor7 button {
-        width: 50vw;
-    }
 }
 
 @media(min-width: 425px){
@@ -582,25 +570,7 @@ input#nombreUsuario {
     }
 }
 
-@media(min-width: 1200px){
-    body {
-        margin-top: 136px;
-    }
-}
-
-@media(min-width: 1400px){
-    body {
-        margin-top: 153px;
-    }
-}
-
-@media(min-width: 1550px){
-    body {
-        margin-top: 170px;
-    }
-}
-
-@media(min-width: 1850px){
+@media(min-width: 1920px){
     body {
         margin-top: 195px;
     }
